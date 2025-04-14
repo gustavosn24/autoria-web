@@ -1,0 +1,17 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+p{
+    font-size: 20px;
+}
+
+.p3{
+    padding: 10px ;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+#p4{
+    font-weight: bold;
+}
