@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    padding-right: 5px;
+}
+
+header{
+    background-color: bisque;
+    color: blueviolet;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    background-color: green;
+    padding: 10px;
+}
+
+a{
+    text-decoration: dashed;
+    color:aliceblue;
+}
+
+a:hover{
+    color: aqua;
+}
+
+section{
+    margin: 15px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+h2{
+    color: brown;
+}
+
+input{
+    margin: 5px;
+}
+
+footer{
+    background-color: bisque;
+    text-align: center;
+    padding: 10px;
+}
