@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <header>
+    <div id="container">
+        <header id="cabacalho">
             <h2>José Gustavo Souza do Nascimento</h2>
-            <!-- foto -->
+            <img src="we" alt="foto">
         </header>
-        <h3>sobre mim</h3>
+        <h3 id="sobre-mim">Sobre Mim</h3>
         <p>
             Lorem ipsum dolor sit amet 
             consectetur adipisicing elit. Rem repellat, 
@@ -21,18 +21,42 @@
             ratione. Ipsam, dolor? Nostrum, ipsam. Ut et quia laborum, 
             pariatur quaerat recusandae.
         </p>
-        <h3>formaçao academica</h3>
-        <p>ifrn</p>
-        <h3>experiencia profissional</h3> 
-        <h3>habilidades</h3>
-        <p>sei lá</p>
-        <p>test</p>
-        <h3>como me achar</h3>
-        <p>telefone</p>
-        <p>email</p>
-        <p>instagram</p>
-        <h3>entre em contato</h3>
-        <p>fomulario</p>
+
+        <h3 id="formacao">Formação Acadêmica</h3>
+        <ul>
+            <li>Técnico em infomática - IFRN (2026)</li>
+        </ul>
+
+        <h3>Experiência Profissional</h3> 
+
+        <h3 id="habilidades">Habilidades</h3>
+        <ul>
+            <li>Trabalho em Equipe</li>
+            <li>Comunicação</li>
+            <li>Resiliente</li>
+            <li>Capacidade de resolver problemas</li>
+            <li>Aprendizagem contínua</li>
+        </ul>
+
+        <h3 id="contato">Como me Achar</h3>
+        <ul>
+            <li>Telefone: (84) 99472-2672</li>
+            <li>Email: jose.gustavo1@escolar.ifrn.edu.br</li>
+            <li>Github: <a href="https://github.com/gustavosn24">gustavosn24</a></li>
+        </ul>
+
+        <h3 id="form">Entre Em Contato</h3>
+        <form id="form-contato">
+            <label for="Nome">Nome:</label>
+            <input type="text" placeholder="Nome" id="nome">
+
+            <label for="Email">Email:</label>
+            <input type="text" placeholder="Email" id="email">
+
+            <label for="Mensagem">Mensagem:</label>
+            <textarea name="Mensagem" id="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </body>
 </html>
