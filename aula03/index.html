@@ -5,20 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lista de compras</title>
+     <style>
+        Body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
 </head>
 <body>
-    <h1>lista de compras</h1>
+    <h1>cadastro de produtos</h1>
     <hr>
-    <form action="text">
-        item: <input type="text" id="nomeItem">
-        <button type="button" onclick="adiciorItem()">adicionar</button>
+    <form>
+        <table>
+        <tr>
+            <td>Nome do produto:</td>
+            <td><input type="text" id="nomeP"></td>
+        </tr>
+        <tr>
+            <td>Quantidade:</td>
+            <td><input type="text" id="quantidadeP"></td>
+        </tr>
+        <tr>
+            <td>Valor:</td>
+            <td><input type="number" id="valorP"></td>
+        </tr>
+        <tr>
+            <td>Fornecedor:</td>
+            <td><input type="text" id="fornecedorP"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="button" onclick="gravarP()">Gravar</button>
+                <button type="reset">Limpar</button>
+            </td>
+        </tr>
+        </table>
     </form>
     <hr>
-    <h2>produtos</h2>
-    <ul id="produto">
-        <li>nenhum produto listado.</li>
-    </ul>
-    quantidade: <span id="quantidade">0</span> item(ns).
-    <script src="Fucao.js"></script> 
+    <h2>Produtos cadastrados</h2>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+            <th>fornecedor</th>
+            <th>Alterar</th>
+            <th>Excluir</th>
+        </tr>
+        <tbody id="conteudo">
+            <tr>
+                <td colspan="7">Nenhum produto cadastrado</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
 </body>
 </html>
