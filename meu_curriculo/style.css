@@ -3,28 +3,34 @@
     margin: 0px;
 }
 
+body{
+    background-color: #1a1a1a;
+}
+
 #container{
     padding: 15px;
     margin: 50px 100px;
-    background-color: aqua;
+    background-color: #6a0dad;
     border-radius: 10px;
+    color: white;
 }
 
-.cabecalho{
+.cabecalho {
     padding: 10px;
     margin: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 p{
     padding-left: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f3e5f5;
 }
 
 h3{
     margin: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e1bee7;
 }
 
 ul{
@@ -33,17 +39,65 @@ ul{
 
 li{
     list-style: none;
-    padding: 3px;
+    padding: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f8f0ff;
 }
 
-label{
-    padding: 10px;
+.github {
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s;
 }
 
-button{
-    padding: 10px;
+.github:hover {
+    color: #d1c4e9; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #4a148c; 
+    padding: 20px;
     border-radius: 10px;
-    border-style: solid 1px;
-    
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #9575cd; 
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    background-color: #ede7f6;
+    color: #1a1a1a;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #7b1fa2; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+form button:hover {
+    background-color: #4a0072;
 }
