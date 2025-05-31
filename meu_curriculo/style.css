@@ -1,47 +1,68 @@
-*{
-    padding: 0px;
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
-#container{
-    padding: 15px;
-    margin: 50px 100px;
+#container {
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 800px;
     background-color: #6a0dad;
-    border-radius: 10px;
-    color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .cabecalho {
     padding: 10px;
-    margin: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
 
-p{
-    padding-left: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.cabecalho h2 {
+    font-size: 2rem;
     color: #f3e5f5;
 }
 
-h3{
-    margin: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h3 {
+    margin: 20px 10px 10px;
+    font-size: 1.4rem;
     color: #e1bee7;
+    padding-bottom: 4px;
 }
 
-ul{
-    margin: 10px;
+p {
+    padding-left: 15px;
+    margin-top: 5px;
+    line-height: 1.6;
+    color: #f3e5f5;
 }
 
-li{
+ul {
+    margin: 10px 20px;
+}
+
+li {
     list-style: none;
-    padding: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 6px 0;
+    position: relative;
+    padding-left: 20px;
     color: #f8f0ff;
+}
+
+li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #d1c4e9;
+    font-size: 1.2rem;
 }
 
 .github {

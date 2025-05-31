@@ -4,60 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meu_curriculo</title>
+    <title>Currículo - José Gustavo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
         <header class="cabecalho">
-            <h2 >José Gustavo Souza do Nascimento</h2>
+            <h2>José Gustavo Souza do Nascimento</h2>
         </header>
         <hr>
-        <h3 id="sobre-mim">Sobre Mim</h3>
-        <p>
-            Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Rem repellat, 
-            aliquam a veniam harum cumque soluta voluptate ex 
-            ratione. Ipsam, dolor? Nostrum, ipsam. Ut et quia laborum, 
-            pariatur quaerat recusandae.
-        </p>
 
-        <h3 id="formacao">Formação Acadêmica</h3>
-        <ul>
-            <li>Técnico em infomática - IFRN (2026)</li>
-        </ul>
+        <section id="sobre-mim">
+            <h3>Sobre Mim</h3>
+            <p>
+                Sou um estudante dedicado, disciplinado e comprometido com meus objetivos.
+                Tenho facilidade em aprender, boa organização com rotinas e foco em resultados.
+                Busco constantemente o desenvolvimento pessoal e profissional, valorizando o
+                trabalho em equipe, a responsabilidade e a superação de metas.
+            </p>
+        </section>
 
-        <h3>Experiência Profissional</h3> 
-        <p>Estou em busca da minha primeira oportunidade de experiência profissional.</p>
+        <section id="formacao">
+            <h3>Formação Acadêmica</h3>
+            <ul>
+                <li>Técnico em Informática - IFRN (conclusão prevista para 2026)</li>
+            </ul>
+        </section>
 
-        <h3 id="habilidades">Habilidades</h3>
-        <ul>
-            <li>Trabalho em Equipe</li>
-            <li>Comunicação</li>
-            <li>Resiliente</li>
-            <li>Capacidade de resolver problemas</li>
-            <li>Aprendizagem contínua</li>
-        </ul>
+        <section id="experiencia">
+            <h3>Experiência Profissional</h3>
+            <p>Estou em busca da minha primeira oportunidade de experiência profissional.</p>
+        </section>
 
-        <h3 id="contato">Como me Achar</h3>
-        <ul>
-            <li>Telefone: (84) 9 9472-2672</li>
-            <li>Email: jose.gustavo1@escolar.ifrn.edu.br</li>
-            <li>Github: <a href="https://github.com/gustavosn24" class="github">@gustavosn24</a></li>
-        </ul>
+        <section id="habilidades">
+            <h3>Habilidades</h3>
+            <ul>
+                <li>Trabalho em equipe</li>
+                <li>Boa comunicação</li>
+                <li>Resiliência</li>
+                <li>Capacidade de resolver problemas</li>
+                <li>Aprendizado contínuo</li>
+            </ul>
+        </section>
 
-        <h3 id="form">Entre Em Contato</h3>
-        <form id="form-contato">
-            <label for="Nome">Nome:</label>
-            <input type="text" placeholder="Nome" id="nome">
+        <section id="contato">
+            <h3>Informações de Contato</h3>
+            <ul>
+                <li>Telefone: (84) 9 9472-2672</li>
+                <li>Email: jose.gustavo1@escolar.ifrn.edu.br</a></li>
+                <li>GitHub: <a href="https://github.com/gustavosn24" class="github" target="_blank">@gustavosn24</a></li>
+            </ul>
+        </section>
 
-            <label for="Email">Email:</label>
-            <input type="text" placeholder="Email" id="email"> 
+        <section id="formulario">
+            <h3>Entre em Contato</h3>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
 
-            <label for="Mensagem">Mensagem:</label>
-            <textarea name="Mensagem" id="mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Digite seu email" required> 
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </div>
 </body>
 </html>
